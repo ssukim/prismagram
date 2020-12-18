@@ -4,6 +4,7 @@ import { prisma } from "../generated/prisma-client";
 
 //토큰을 받는다 -> 해석 -> 사용자 찾기 -> 사용자 존재 -> grapql 함수 실행
 
+//토큰 추출
 const jwtOptions = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
   secretOrKey: process.env.JWT_SECRET,
