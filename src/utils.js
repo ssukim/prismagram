@@ -1,7 +1,3 @@
-import dotenv from "dotenv";
-import path from "path";
-dotenv.config({ path: path.resolve(__dirname, ".env") });
-
 import { adjectives, nouns } from "./word";
 import nodemailer from "nodemailer";
 import mgTransport from "nodemailer-mailgun-transport";
