@@ -8,7 +8,7 @@ export const generateSecret = () => {
   return `${adjectives[randomNumber]} ${nouns[randomNumber]}`;
 };
 
-console.log(process.env.MAILGUN_API, process.env.MAILGUN_DOMAIN);
+// console.log(process.env.MAILGUN_API, process.env.MAILGUN_DOMAIN);
 export const sendMail = (email) => {
   const options = {
     auth: {
