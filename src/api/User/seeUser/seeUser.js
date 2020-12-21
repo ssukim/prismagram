@@ -1,11 +1,15 @@
 import { prisma } from "../../../../generated/prisma-client";
-import { isAuthenticated } from "../../../middlewares";
 
 export default {
   Query: {
-    seeUser: (_, args, { request }) => {
+    seeUser: async (_, args) => {
       const { id } = args;
-      return prisma.user({ id });
+      const user = await prisma.user({id});
+      const posts = await prisma.user({id}).posts();
+      return {
+        user,
+        posts
+      };
     },
   },
 };
