@@ -1,3 +1,10 @@
+# {
+#   searchUser(term:"ssukim"){
+#     id
+#     userName
+#     firstName
+#   }
+# }
 type Query{
     searchUser(term: String!): [User!]!
 }

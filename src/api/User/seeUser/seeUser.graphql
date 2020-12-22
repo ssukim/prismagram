@@ -1,3 +1,8 @@
+# {
+#   seeUser(id:"cki6wxrs6bwx20a26zoujzael"){
+#     firstName
+#   }
+# }
 type Query {
     seeUser(id: String!): UserProfile!
 }

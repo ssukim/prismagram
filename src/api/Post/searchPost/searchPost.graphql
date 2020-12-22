@@ -1,3 +1,9 @@
+# {
+#   searchPost(term:"love"){
+#     id
+#     caption
+#   }
+# }
 type Query {
     searchPost(term: String!): [Post!]!
 }

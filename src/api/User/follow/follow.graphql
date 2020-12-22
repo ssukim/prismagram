@@ -1,3 +1,6 @@
+# mutation {
+#   follow(id:"ckiy1abmiog300999oxyometm")
+# }
 type Mutation {
     follow(id: String!): Boolean
 }

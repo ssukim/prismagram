@@ -1,3 +1,6 @@
+# mutation{
+#   toggleLike(postId:"cki72yzipc2sq0a26bigx5426")
+# }
 type Mutation {
     toggleLike(postId: String!): Boolean!
 }

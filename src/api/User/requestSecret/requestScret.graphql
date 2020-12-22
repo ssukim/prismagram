@@ -1,3 +1,6 @@
+# mutation{
+#   requestSecret(email:"test@test.com")
+# }
 type Mutation{
     requestSecret(email:String): Boolean!
 }

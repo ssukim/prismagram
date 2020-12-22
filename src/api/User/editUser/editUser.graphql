@@ -1,3 +1,10 @@
+# mutation {
+#   editUser(bio:"I love to eat kimchi in the morning"){
+#     firstName
+#     lastName
+#     bio
+#   }
+# }
 type Mutation {
     editUser(
         userName: String

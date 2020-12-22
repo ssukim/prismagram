@@ -1,3 +1,12 @@
+# {
+# 	me{
+#     user{
+#       fullName
+#       amIFollowing
+#       itsMe
+#     }
+#   }
+# }
 type Query {
     me: UserProfile!
 }

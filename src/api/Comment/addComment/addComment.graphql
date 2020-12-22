@@ -1,3 +1,9 @@
+# mutation{
+#   addComment(postId:"cki72yzipc2sq0a26bigx5426", text:"I love Prisma"){
+#     id
+#     text
+#   }
+# }
 type Mutation {
     addComment(text: String!, postId: String!): Comment!
 }
