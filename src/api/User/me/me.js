@@ -15,13 +15,4 @@ export default {
       };
     },
   },
-  User: {
-    fullName: parent => {
-      return `${parent.firstName} ${parent.lastName}`;
-    }
-    // fullName: (parent, __, {request})=>{
-    //   console.log(parent);
-    //   return "lalalla";
-    // }
-  }
 };
