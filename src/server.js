@@ -19,5 +19,5 @@ const server = new GraphQLServer({
 server.express.use(authenticateJwt);
 
 server.start({ PORT }, () =>
-  console.log(`✅ Server runnin on http://localhost:${PORT}`)
+  console.log(`✅ Server running on http://localhost:${PORT}`)
 );

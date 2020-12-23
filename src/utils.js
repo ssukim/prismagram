@@ -39,5 +39,5 @@ export const sendSecretMail = (address, secret) => {
   return sendMail(email);
 };
 
-// 토큰 생성 합수
+// id를 받아서 암호화된 JWTToken을 만들어주는 메소드
 export const generateToken = id => jwt.sign({ id }, process.env.JWT_SECRET);

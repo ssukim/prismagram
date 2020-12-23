@@ -1,3 +1,15 @@
+# mutation {
+#   upload(
+#     caption: "Kimchis"
+#     files: [
+#       "https://cdn.crowdpic.net/detail-thumb/thumb_d_65390B023BB5FA177242F48877F1D44B.jpg",
+#       "https://cdn.imweb.me/thumbnail/20200415/6b6e035658bac.png"
+#     ]
+#   ){
+#     id
+#     caption
+#   }
+# }
 type Mutation {
     upload(caption: String!, files: [String!]!): Post!
 }
