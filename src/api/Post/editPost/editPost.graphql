@@ -1,3 +1,10 @@
+#mutation{
+#  editPost(id:"ckizld0aobi8x0a266dg1i24p", location:"Dongjak, Seoul", action:DELETE){
+#    id
+#    location
+#  }
+#}
+
 enum ACTIONS {
     EDIT
     DELETE
