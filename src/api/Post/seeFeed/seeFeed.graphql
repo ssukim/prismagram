@@ -1,3 +1,9 @@
+#{
+#  seeFeed{
+#    id
+#    caption
+#  }
+#}
 type Query {
     seeFeed: [Post!]!
 }
