@@ -1,3 +1,8 @@
+#mutation{
+#  sendMessage(message:"Old Room", roomId:"ckj2lnukkxri60999qqty64gw"){
+#    id
+#  }
+#}
 type Mutation {
     sendMessage(roomId: String, message:String!, toId:String): Message
 }
