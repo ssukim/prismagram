@@ -4,5 +4,5 @@
 #   }
 # }
 type Query {
-    seeUser(id: String!): UserProfile!
+    seeUser(id: String!): User!
 }
