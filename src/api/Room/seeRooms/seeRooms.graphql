@@ -1,3 +1,13 @@
+# {
+#   seeRooms{
+#     id
+#     participants{
+#       id
+#       userName
+#       avatar
+#     }
+#   }
+# }
 type Query {
     seeRooms: [Room!]!
 }

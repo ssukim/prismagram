@@ -29,6 +29,7 @@ export const sendMail = (email) => {
 
 // 메일에 대한 내용을 다룹니다. sendMail을 통해 메일을 보냅니다.
 export const sendSecretMail = (address, secret) => {
+  console.log(address, secret);
   const email = {
     from: "test@edupopkorn.com",
     to: address,

@@ -1,3 +1,8 @@
+# mutation{
+#   createAccount(userName:"ssukim3", email:"tntntn0930@naver.com", firstName:"Kim", lastName:"JeongSu", bio:"Men"){
+#     id
+#   }
+# }
 type Mutation {
   createAccount(
     userName: String!
@@ -5,9 +10,5 @@ type Mutation {
     firstName: String
     lastName: String
     bio: String
-  ): User!
-}
-
-type Query {
-  something: String!
+  ): Boolean!
 }

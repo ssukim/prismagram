@@ -1,3 +1,18 @@
+# {
+#   seeFullPost(id:"cki72yzipc2sq0a26bigx5426"){
+#     post{
+#       location
+#     }
+#     comments{
+#       id
+#       text
+#       user {
+#         userName
+#       }
+#     }
+#     likeCount
+#   }
+# }
 type Query {
     seeFullPost(id: String!): Post!
 }

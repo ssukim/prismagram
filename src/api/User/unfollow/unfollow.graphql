@@ -1,3 +1,6 @@
+# mutation {
+#   unfollow(id:"ckiy1abmiog300999oxyometm")
+# }
 type Mutation {
     unfollow(id: String!): Boolean!
 }

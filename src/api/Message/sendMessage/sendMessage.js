@@ -9,22 +9,22 @@ export default {
       let room;
       if (roomId === undefined) {
         if (user.id !== toId) {
-          room = await prisma
-            .createRoom({
-              participants: {
-                connect: [{ id: toId }, { id: user.id }],
-              },
-            })
+          room = await prisma.createRoom({
+            participants: {
+              connect: [{ id: toId }, { id: user.id }],
+            },
+          });
         }
       } else {
-        room = await prisma.room({ id: roomId })
+        room = await prisma.room({ id: roomId });
       }
 
       if (!room) {
         throw Error("Room not found");
       }
-      const getTo = room.participants.filter(
-        participant => participant.id !== user.id
+      const participants = await prisma.room({id:room.id}).participants();
+      const getTo = participants.filter(
+        (participant) => participant.id !== user.id
       )[0];
       return prisma.createMessage({
         text: message,

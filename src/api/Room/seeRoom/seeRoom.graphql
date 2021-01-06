@@ -1,3 +1,22 @@
+# {
+#   seeRoom(id: "ckj2lnukkxri60999qqty64gw"){
+#     participants {
+#       id
+#       userName
+#       avatar
+#     }
+#     messages{
+#       id
+#       text
+#       to {
+#         userName
+#       }
+#       from {
+#         userName
+#       }
+#     }
+#   }
+# }
 type Query {
     seeRoom(id: String!): Room!
 }

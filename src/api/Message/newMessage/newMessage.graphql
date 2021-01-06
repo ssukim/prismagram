@@ -1,3 +1,9 @@
+#subscription{
+#  newMessage(roomId:"ckj9hhdf7ok9s0a26076y99hm"){
+#    id
+#  }
+#}
+
 type Subscription {
     newMessage(roomId: String!): Message
 }
