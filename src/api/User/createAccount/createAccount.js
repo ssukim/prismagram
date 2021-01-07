@@ -4,10 +4,10 @@ export default {
   Mutation: {
     createAccount: async (_, args) => {
       const { userName, email, firstName = "", lastName = "", bio = "" } = args;
-      prisma.$exists.user({
+      const exists = await prisma.$exists.user({
         OR: [
           {
-            username
+            userName
           },
           { email }
         ]
